@@ -1,0 +1,610 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A26BBE82734580400983C5A /* Prime_CalculatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A26BBE72734580400983C5A /* Prime_CalculatorApp.swift */; };
+		0A26BBEA2734580400983C5A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A26BBE92734580400983C5A /* ContentView.swift */; };
+		0A26BBEC2734580600983C5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A26BBEB2734580600983C5A /* Assets.xcassets */; };
+		0A26BBEF2734580600983C5A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A26BBEE2734580600983C5A /* Preview Assets.xcassets */; };
+		0A26BBF92734580600983C5A /* Prime_CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A26BBF82734580600983C5A /* Prime_CalculatorTests.swift */; };
+		0A26BC032734580600983C5A /* Prime_CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A26BC022734580600983C5A /* Prime_CalculatorUITests.swift */; };
+		0A26BC052734580600983C5A /* Prime_CalculatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A26BC042734580600983C5A /* Prime_CalculatorUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0A26BBF52734580600983C5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A26BBDC2734580400983C5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A26BBE32734580400983C5A;
+			remoteInfo = "Prime Calculator";
+		};
+		0A26BBFF2734580600983C5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A26BBDC2734580400983C5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A26BBE32734580400983C5A;
+			remoteInfo = "Prime Calculator";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A26BBE42734580400983C5A /* Prime Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Prime Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A26BBE72734580400983C5A /* Prime_CalculatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prime_CalculatorApp.swift; sourceTree = "<group>"; };
+		0A26BBE92734580400983C5A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0A26BBEB2734580600983C5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0A26BBEE2734580600983C5A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0A26BBF42734580600983C5A /* Prime CalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Prime CalculatorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A26BBF82734580600983C5A /* Prime_CalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prime_CalculatorTests.swift; sourceTree = "<group>"; };
+		0A26BBFE2734580600983C5A /* Prime CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Prime CalculatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A26BC022734580600983C5A /* Prime_CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prime_CalculatorUITests.swift; sourceTree = "<group>"; };
+		0A26BC042734580600983C5A /* Prime_CalculatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prime_CalculatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A26BBE12734580400983C5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A26BBF12734580600983C5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A26BBFB2734580600983C5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A26BBDB2734580400983C5A = {
+			isa = PBXGroup;
+			children = (
+				0A26BBE62734580400983C5A /* Prime Calculator */,
+				0A26BBF72734580600983C5A /* Prime CalculatorTests */,
+				0A26BC012734580600983C5A /* Prime CalculatorUITests */,
+				0A26BBE52734580400983C5A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0A26BBE52734580400983C5A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A26BBE42734580400983C5A /* Prime Calculator.app */,
+				0A26BBF42734580600983C5A /* Prime CalculatorTests.xctest */,
+				0A26BBFE2734580600983C5A /* Prime CalculatorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0A26BBE62734580400983C5A /* Prime Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				0A26BBE72734580400983C5A /* Prime_CalculatorApp.swift */,
+				0A26BBE92734580400983C5A /* ContentView.swift */,
+				0A26BBEB2734580600983C5A /* Assets.xcassets */,
+				0A26BBED2734580600983C5A /* Preview Content */,
+			);
+			path = "Prime Calculator";
+			sourceTree = "<group>";
+		};
+		0A26BBED2734580600983C5A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0A26BBEE2734580600983C5A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0A26BBF72734580600983C5A /* Prime CalculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				0A26BBF82734580600983C5A /* Prime_CalculatorTests.swift */,
+			);
+			path = "Prime CalculatorTests";
+			sourceTree = "<group>";
+		};
+		0A26BC012734580600983C5A /* Prime CalculatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0A26BC022734580600983C5A /* Prime_CalculatorUITests.swift */,
+				0A26BC042734580600983C5A /* Prime_CalculatorUITestsLaunchTests.swift */,
+			);
+			path = "Prime CalculatorUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0A26BBE32734580400983C5A /* Prime Calculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A26BC082734580600983C5A /* Build configuration list for PBXNativeTarget "Prime Calculator" */;
+			buildPhases = (
+				0A26BBE02734580400983C5A /* Sources */,
+				0A26BBE12734580400983C5A /* Frameworks */,
+				0A26BBE22734580400983C5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Prime Calculator";
+			productName = "Prime Calculator";
+			productReference = 0A26BBE42734580400983C5A /* Prime Calculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0A26BBF32734580600983C5A /* Prime CalculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A26BC0B2734580600983C5A /* Build configuration list for PBXNativeTarget "Prime CalculatorTests" */;
+			buildPhases = (
+				0A26BBF02734580600983C5A /* Sources */,
+				0A26BBF12734580600983C5A /* Frameworks */,
+				0A26BBF22734580600983C5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A26BBF62734580600983C5A /* PBXTargetDependency */,
+			);
+			name = "Prime CalculatorTests";
+			productName = "Prime CalculatorTests";
+			productReference = 0A26BBF42734580600983C5A /* Prime CalculatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0A26BBFD2734580600983C5A /* Prime CalculatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A26BC0E2734580600983C5A /* Build configuration list for PBXNativeTarget "Prime CalculatorUITests" */;
+			buildPhases = (
+				0A26BBFA2734580600983C5A /* Sources */,
+				0A26BBFB2734580600983C5A /* Frameworks */,
+				0A26BBFC2734580600983C5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A26BC002734580600983C5A /* PBXTargetDependency */,
+			);
+			name = "Prime CalculatorUITests";
+			productName = "Prime CalculatorUITests";
+			productReference = 0A26BBFE2734580600983C5A /* Prime CalculatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0A26BBDC2734580400983C5A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					0A26BBE32734580400983C5A = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					0A26BBF32734580600983C5A = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 0A26BBE32734580400983C5A;
+					};
+					0A26BBFD2734580600983C5A = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 0A26BBE32734580400983C5A;
+					};
+				};
+			};
+			buildConfigurationList = 0A26BBDF2734580400983C5A /* Build configuration list for PBXProject "Prime Calculator" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0A26BBDB2734580400983C5A;
+			productRefGroup = 0A26BBE52734580400983C5A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0A26BBE32734580400983C5A /* Prime Calculator */,
+				0A26BBF32734580600983C5A /* Prime CalculatorTests */,
+				0A26BBFD2734580600983C5A /* Prime CalculatorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0A26BBE22734580400983C5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A26BBEF2734580600983C5A /* Preview Assets.xcassets in Resources */,
+				0A26BBEC2734580600983C5A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A26BBF22734580600983C5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A26BBFC2734580600983C5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A26BBE02734580400983C5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A26BBEA2734580400983C5A /* ContentView.swift in Sources */,
+				0A26BBE82734580400983C5A /* Prime_CalculatorApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A26BBF02734580600983C5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A26BBF92734580600983C5A /* Prime_CalculatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A26BBFA2734580600983C5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A26BC052734580600983C5A /* Prime_CalculatorUITestsLaunchTests.swift in Sources */,
+				0A26BC032734580600983C5A /* Prime_CalculatorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0A26BBF62734580600983C5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A26BBE32734580400983C5A /* Prime Calculator */;
+			targetProxy = 0A26BBF52734580600983C5A /* PBXContainerItemProxy */;
+		};
+		0A26BC002734580600983C5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A26BBE32734580400983C5A /* Prime Calculator */;
+			targetProxy = 0A26BBFF2734580600983C5A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0A26BC062734580600983C5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0A26BC072734580600983C5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0A26BC092734580600983C5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Prime Calculator/Preview Content\"";
+				DEVELOPMENT_TEAM = RV78ENMXZ2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.luckdev.Prime-Calculator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0A26BC0A2734580600983C5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Prime Calculator/Preview Content\"";
+				DEVELOPMENT_TEAM = RV78ENMXZ2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.luckdev.Prime-Calculator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0A26BC0C2734580600983C5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RV78ENMXZ2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.luckdev.Prime-CalculatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Prime Calculator.app/Prime Calculator";
+			};
+			name = Debug;
+		};
+		0A26BC0D2734580600983C5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RV78ENMXZ2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.luckdev.Prime-CalculatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Prime Calculator.app/Prime Calculator";
+			};
+			name = Release;
+		};
+		0A26BC0F2734580600983C5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RV78ENMXZ2;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.luckdev.Prime-CalculatorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Prime Calculator";
+			};
+			name = Debug;
+		};
+		0A26BC102734580600983C5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RV78ENMXZ2;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.luckdev.Prime-CalculatorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Prime Calculator";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A26BBDF2734580400983C5A /* Build configuration list for PBXProject "Prime Calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A26BC062734580600983C5A /* Debug */,
+				0A26BC072734580600983C5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A26BC082734580600983C5A /* Build configuration list for PBXNativeTarget "Prime Calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A26BC092734580600983C5A /* Debug */,
+				0A26BC0A2734580600983C5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A26BC0B2734580600983C5A /* Build configuration list for PBXNativeTarget "Prime CalculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A26BC0C2734580600983C5A /* Debug */,
+				0A26BC0D2734580600983C5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A26BC0E2734580600983C5A /* Build configuration list for PBXNativeTarget "Prime CalculatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A26BC0F2734580600983C5A /* Debug */,
+				0A26BC102734580600983C5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0A26BBDC2734580400983C5A /* Project object */;
+}
