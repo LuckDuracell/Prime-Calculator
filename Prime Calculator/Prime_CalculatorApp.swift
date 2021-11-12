@@ -8,6 +8,7 @@
 import SwiftUI
 
 @main
+
 struct Prime_CalculatorApp: App {
     var body: some Scene {
         WindowGroup {

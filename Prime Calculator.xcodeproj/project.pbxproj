@@ -14,6 +14,7 @@
 		0A26BBF92734580600983C5A /* Prime_CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A26BBF82734580600983C5A /* Prime_CalculatorTests.swift */; };
 		0A26BC032734580600983C5A /* Prime_CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A26BC022734580600983C5A /* Prime_CalculatorUITests.swift */; };
 		0A26BC052734580600983C5A /* Prime_CalculatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A26BC042734580600983C5A /* Prime_CalculatorUITestsLaunchTests.swift */; };
+		0A8623FD27364130005DBF3C /* PersistantData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8623FC27364130005DBF3C /* PersistantData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		0A26BBFE2734580600983C5A /* Prime CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Prime CalculatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A26BC022734580600983C5A /* Prime_CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prime_CalculatorUITests.swift; sourceTree = "<group>"; };
 		0A26BC042734580600983C5A /* Prime_CalculatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prime_CalculatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0A8623FC27364130005DBF3C /* PersistantData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistantData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				0A26BBE72734580400983C5A /* Prime_CalculatorApp.swift */,
 				0A26BBE92734580400983C5A /* ContentView.swift */,
+				0A8623FC27364130005DBF3C /* PersistantData.swift */,
 				0A26BBEB2734580600983C5A /* Assets.xcassets */,
 				0A26BBED2734580600983C5A /* Preview Content */,
 			);
@@ -257,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A8623FD27364130005DBF3C /* PersistantData.swift in Sources */,
 				0A26BBEA2734580400983C5A /* ContentView.swift in Sources */,
 				0A26BBE82734580400983C5A /* Prime_CalculatorApp.swift in Sources */,
 			);
