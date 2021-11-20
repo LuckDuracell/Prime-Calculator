@@ -416,7 +416,11 @@ struct ContentView: View {
                                 if "\(output.suffix(2))" == ".0" {
                                     output = "\(Int(stringResult) ?? 0)"
                                 }
-                                calcInputs = [output]
+                                if output == "Error" {
+                                    calcInputs = ["\(output)"]
+                                } else {
+                                    calcInputs = ["\(Float(output)!)"]
+                                }
                             }
                             if calculations.isEmpty {
                                 CalculationCount.saveToFile([CalculationCount(num: 1)])
@@ -483,6 +487,7 @@ struct ContentView: View {
                                     }
                                     Button {
                                         calcInputs.append("para1")
+                                        opPressed = true
                                     } label: {
                                         Text("(")
                                             .foregroundColor(.black)
@@ -496,6 +501,7 @@ struct ContentView: View {
                                     }
                                     Button {
                                         calcInputs.append("para2")
+                                        opPressed = true
                                     } label: {
                                         Text(")")
                                             .foregroundColor(.black)
@@ -635,12 +641,30 @@ extension View {
 func showCalculations(inputs: [String]) -> String {
     var inputsEditable = inputs
     var result = ""
-    let itemCount = inputs.count - 1
+    var itemCount = inputs.count - 1
     var loopLock = false
     
     for i in 0...itemCount {
         if inputsEditable[i].contains(".") == false && isOperator(item: inputs[i]) == false {
             inputsEditable[i] = "\(inputsEditable[i]).0"
+        }
+    }
+    
+    for i in 0...itemCount {
+        if i > 0 {
+            if inputsEditable[i] == "para1" && isOperator(item: inputsEditable[i-1]) != true {
+                inputsEditable.insert("*", at: i)
+                itemCount += 1
+            }
+        }
+    }
+    
+    for i in 0...itemCount {
+        if i < itemCount {
+            if inputsEditable[i] == "para2" && isOperator(item: inputsEditable[i+1]) != true {
+                inputsEditable.insert("*", at: i+1)
+                itemCount += 1
+            }
         }
     }
     
@@ -701,6 +725,7 @@ func showCalculations(inputs: [String]) -> String {
             }
         }
     }
+    
     return result
 }
 
@@ -913,20 +938,20 @@ func earlyPercentage(items: [String]) -> Bool {
 
 func extrenuousParaenthasis(items: [String]) -> Bool {
     var result = false
-    
-    let calcString = showCalculations(inputs: items)
+
+    let calcString = showCalculations2(inputs: items)
     let open: Character = "("
     let closed: Character = ")"
     let openCount = calcString.filter { $0 == open }.count
     let closedCount = calcString.filter { $0 == closed }.count
     if openCount != closedCount { result = true }
-    
+
     var stillOpen = false
     for i in 0...items.count - 1 {
         if items[i] == "para1" { stillOpen = true }
         if items[i] == "para2" { stillOpen = false }
     }
-    
+
     var emptyParaenthasis = false
     for i in 0...items.count - 1 {
         if items[i] == "para1" {
@@ -936,23 +961,102 @@ func extrenuousParaenthasis(items: [String]) -> Bool {
         }
     }
     
+    
+    print(openCount)
+    print(closedCount)
     return result || stillOpen || emptyParaenthasis
 }
 
-
 func bigBoyError(inputs: [String]) -> Bool {
     var result = false
-    if isOperatorAlt(item: inputs.last ?? "") {
+    if isOperatorAlt(item: inputs.last ?? "") && inputs.last != "para2" {
         result = true
+        print("error 1")
     } else if tooManyDecimals(items: inputs) {
         result = true
+        print("error 2")
     } else if earlyPercentage(items: inputs) {
         result = true
+        print("error 3")
     } else if extrenuousParaenthasis(items: inputs) {
         result = true
-    } else if isOperatorAlt2(item: inputs.first ?? "") {
+        print("error 4")
+    } else if isOperatorAlt2(item: inputs.first ?? "") && inputs.first != "para1" && inputs.first != "log" && inputs.first != "sqrt" {
         result = true
+        print("error 5")
     }
     return result
 }
 
+
+func showCalculations2(inputs: [String]) -> String {
+    var inputsEditable = inputs
+    var result = ""
+    let itemCount = inputs.count - 1
+    var loopLock = false
+    
+    for i in 0...itemCount {
+        if inputsEditable[i].contains(".") == false && isOperator(item: inputs[i]) == false {
+            inputsEditable[i] = "\(inputsEditable[i]).0"
+        }
+    }
+    
+    if itemCount > -1 {
+        for i in 0...itemCount {
+            if loopLock == false {
+                switch inputsEditable[i] {
+                    case "+":
+                        result.append("+")
+                    case "-":
+                        result.append("-")
+                    case "/":
+                        result.append("/")
+                    case "*":
+                        result.append("*")
+                    case "neg":
+                        result.append("(-")
+                    case "para1":
+                        result.append("(")
+                    case "para2":
+                        result.append(")")
+                    case "log":
+                        if itemCount > i {
+                            result.append("\(log10((Double(inputsEditable[i+1]) ?? 0)))")
+                            loopLock = true
+                        }
+                    case "inv":
+                        result.append("**(-1)")
+                    case "sqrt":
+                        if itemCount > i {
+                            result.append("\((Double(inputsEditable[i+1]) ?? 0).squareRoot())")
+                            loopLock = true
+                        }
+                    case "ex":
+                        result.append("**")
+                    case "cos":
+                        if itemCount > i {
+                            result.append("\(cos((Double(inputsEditable[i+1]) ?? 0) * Double.pi / 180))")
+                            loopLock = true
+                        }
+                    case "sin":
+                        if itemCount > i {
+                            result.append("\(sin((Double(inputsEditable[i+1]) ?? 0) * Double.pi / 180))")
+                            loopLock = true
+                        }
+                    case "tan":
+                        if itemCount > i {
+                            result.append("\(tan((Double(inputsEditable[i+1]) ?? 0) * Double.pi / 180))")
+                            loopLock = true
+                        }
+                    case "per":
+                        result.append("/100.0")
+                    default:
+                        result.append(inputsEditable[i])
+                }
+            } else {
+                loopLock = false
+            }
+        }
+    }
+    return result
+}
